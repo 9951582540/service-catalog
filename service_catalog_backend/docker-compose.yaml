@@ -1,0 +1,11 @@
+version: '3'
+services:
+  servicecatalog:
+    image: devopswissen/service5:v1
+    ports:
+      - "8091:8091"
+
+  nginx:
+    image: devopswissen/nginx5:v1
+    ports:
+      - "8090:8090"
